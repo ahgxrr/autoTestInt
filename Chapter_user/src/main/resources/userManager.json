@@ -5,7 +5,7 @@
       "uri":"/login",
       "method":"post",
       "json":{
-        "name":"zhangsan",
+        "userName":"zhangsan",
         "password":"123456"
       }
     },

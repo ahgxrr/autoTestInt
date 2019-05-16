@@ -1,46 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="6" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="用户管理系统测试套件" duration-ms="9022" started-at="2019-05-16T03:46:03Z" finished-at="2019-05-16T03:46:12Z">
+  <suite name="用户管理系统测试套件" duration-ms="3137" started-at="2019-05-16T12:41:53Z" finished-at="2019-05-16T12:41:56Z">
     <groups>
       <group name="loginTrue">
-        <method signature="LoginTest.loginTrue()[pri:0, instance:com.course.cases.LoginTest@e580929]" name="loginTrue" class="com.course.cases.LoginTest"/>
+        <method signature="LoginTest.loginTrue()[pri:0, instance:com.course.cases.LoginTest@129a8472]" name="loginTrue" class="com.course.cases.LoginTest"/>
       </group> <!-- loginTrue -->
     </groups>
-    <test name="用户管理系统测试用例" duration-ms="9022" started-at="2019-05-16T03:46:03Z" finished-at="2019-05-16T03:46:12Z">
-      <class name="com.course.cases.UpdateUserInfoTest">
-        <test-method status="PASS" signature="updateUserInfo()[pri:0, instance:com.course.cases.UpdateUserInfoTest@27f674d]" name="updateUserInfo" duration-ms="2180" depends-on-groups="loginTrue" started-at="2019-05-16T11:46:10Z" description="鏇存敼鐢ㄦ埛淇℃伅" finished-at="2019-05-16T11:46:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateUserInfo -->
-      </class> <!-- com.course.cases.UpdateUserInfoTest -->
+    <test name="用户管理系统测试用例" duration-ms="3137" started-at="2019-05-16T12:41:53Z" finished-at="2019-05-16T12:41:56Z">
       <class name="com.course.cases.LoginTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.course.cases.LoginTest@e580929]" name="beforeTest" is-config="true" duration-ms="112" started-at="2019-05-16T11:46:03Z" description="娴嬭瘯鍑嗗宸ヤ綔,鑾峰彇HttpClient瀵硅薄" finished-at="2019-05-16T11:46:03Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.course.cases.LoginTest@129a8472]" name="beforeTest" is-config="true" duration-ms="44" started-at="2019-05-16T20:41:53Z" description="娴嬭瘯鍑嗗宸ヤ綔,鑾峰彇HttpClient瀵硅薄" finished-at="2019-05-16T20:41:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="loginTrue()[pri:0, instance:com.course.cases.LoginTest@e580929]" name="loginTrue" duration-ms="2322" started-at="2019-05-16T11:46:03Z" description="鐢ㄦ埛鎴愬姛鐧婚檰鎺ュ彛" finished-at="2019-05-16T11:46:05Z">
+        <test-method status="PASS" signature="loginTrue()[pri:0, instance:com.course.cases.LoginTest@129a8472]" name="loginTrue" duration-ms="931" started-at="2019-05-16T20:41:53Z" description="鐢ㄦ埛鎴愬姛鐧婚檰鎺ュ彛" finished-at="2019-05-16T20:41:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTrue -->
-        <test-method status="PASS" signature="loginFalse()[pri:0, instance:com.course.cases.LoginTest@e580929]" name="loginFalse" duration-ms="120" started-at="2019-05-16T11:46:05Z" description="鐢ㄦ埛鐧婚檰澶辫触鎺ュ彛" finished-at="2019-05-16T11:46:05Z">
+        <test-method status="PASS" signature="loginFalse()[pri:0, instance:com.course.cases.LoginTest@129a8472]" name="loginFalse" duration-ms="67" started-at="2019-05-16T20:41:54Z" description="鐢ㄦ埛鐧婚檰澶辫触鎺ュ彛" finished-at="2019-05-16T20:41:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginFalse -->
       </class> <!-- com.course.cases.LoginTest -->
       <class name="com.course.cases.GetUserInfoTest">
-        <test-method status="PASS" signature="getUserInfo()[pri:0, instance:com.course.cases.GetUserInfoTest@4c203ea1]" name="getUserInfo" duration-ms="2103" depends-on-groups="loginTrue" started-at="2019-05-16T11:46:08Z" description="鑾峰彇userId涓�1鐨勭敤鎴蜂俊鎭�" finished-at="2019-05-16T11:46:10Z">
+        <test-method status="PASS" signature="getUserInfo()[pri:0, instance:com.course.cases.GetUserInfoTest@1b0375b3]" name="getUserInfo" duration-ms="2076" depends-on-groups="loginTrue" started-at="2019-05-16T20:41:54Z" description="鑾峰彇userId涓�1鐨勭敤鎴蜂俊鎭�" finished-at="2019-05-16T20:41:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUserInfo -->
       </class> <!-- com.course.cases.GetUserInfoTest -->
-      <class name="com.course.cases.AddUserTest">
-        <test-method status="PASS" signature="addUser()[pri:0, instance:com.course.cases.AddUserTest@1cd072a9]" name="addUser" duration-ms="2145" depends-on-groups="loginTrue" started-at="2019-05-16T11:46:05Z" description="娣诲姞鐢ㄦ埛鎺ュ彛鎺ュ彛" finished-at="2019-05-16T11:46:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addUser -->
-      </class> <!-- com.course.cases.AddUserTest -->
     </test> <!-- 用户管理系统测试用例 -->
   </suite> <!-- 用户管理系统测试套件 -->
 </testng-results>

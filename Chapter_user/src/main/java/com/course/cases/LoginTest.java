@@ -62,7 +62,9 @@ public class LoginTest {
         String result = getResult(loginCase);
         //处理结果，就是判断返回结果是否符合预期
         //从数据表loginCase中拿到的loginCase（id为2）的expected就是false
-        Assert.assertNotEquals(loginCase.getExpected(),result);
+       // Assert.assertNotEquals(loginCase.getExpected(),result);  //用json文件的时候用这个方法
+        Assert.assertEquals(loginCase.getExpected(),result);  //用Chapter_usr2的时候用这个方法
+
     }
 
 
@@ -71,7 +73,7 @@ public class LoginTest {
         HttpPost post = new HttpPost(TestConfig.loginUrl);
         JSONObject param = new JSONObject();
 
-        param.put("name",loginCase.getUserName());
+        param.put("userName",loginCase.getUserName());
         param.put("password",loginCase.getPassword());
         //设置请求头信息 设置header
         post.setHeader("content-type","application/json");
@@ -84,7 +86,7 @@ public class LoginTest {
         HttpResponse response = TestConfig.defaultHttpClient.execute(post);
         //获取响应结果
         result = EntityUtils.toString(response.getEntity(),"utf-8");
-        System.out.println(result);
+        System.out.println("getResult()方法内部的result："+result);
         TestConfig.store = TestConfig.defaultHttpClient.getCookieStore();
         return result;//true或false
     }

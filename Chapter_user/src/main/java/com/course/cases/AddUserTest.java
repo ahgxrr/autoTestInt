@@ -39,16 +39,14 @@ public class AddUserTest {
 
         //查询用户看是否添加成功
         Thread.sleep(2000);
-
         //从user数据表中拿到和 addUserCase一样的，
         User user = session.selectOne("addUser",addUserCase);
         System.out.println(user.toString());
-
         //处理结果，就是判断返回结果是否符合预期
         //只要addUserCase里那条一样的用户的expected也是true 验证就成功。。。
         // 什么验证逻辑呀，那你后来又在user表中查什么的，写着完的吧
         Assert.assertEquals(addUserCase.getExpected(),result);
-
+        //每次与运行完之后将user表中的zhao9删除
 
     }
 
@@ -76,7 +74,7 @@ public class AddUserTest {
         HttpResponse response = TestConfig.defaultHttpClient.execute(post);
         //获取响应结果
         result = EntityUtils.toString(response.getEntity(),"utf-8");
-        System.out.println("result: "+result);
+        System.out.println("getResult()方法内部的result: "+result);
         return result;//true
     }
 

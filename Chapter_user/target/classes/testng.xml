@@ -11,23 +11,22 @@
                     <include name="loginFalse"/>
                 </methods>
             </class>
-            <class name="com.course.cases.AddUserTest">
+         <!--   <class name="com.course.cases.AddUserTest">
                 <methods>
                     <include name="addUser"/>
                 </methods>
-            </class>
+            </class>-->
             <class name="com.course.cases.GetUserInfoTest">
                 <methods>
                     <include name="getUserInfo"/>
                 </methods>
             </class>
-            <class name="com.course.cases.UpdateUserInfoTest">
+           <!-- <class name="com.course.cases.UpdateUserInfoTest">
                 <methods>
                     <include name="updateUserInfo"/>
-                    <!--<include name="deleteUser"/>-->
+                    &lt;!&ndash;<include name="deleteUser"/>&ndash;&gt;
                 </methods>
-            </class>
-
+            </class>-->
             <!--<class name="com.course.cases.GetUserInfoListTest">
                 <methods>
                     <include name="getUserListInfo"/>
